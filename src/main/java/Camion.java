@@ -15,4 +15,12 @@ public class Camion {
         this.estadoServicio = estadoServicio;
         this.valorEmbarque = valorEmbarque;
     }
+/*
+    private int asignarValorEmbarque(){
+
+
+        return valor;
+    }
+ */
+
 }

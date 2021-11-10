@@ -2,13 +2,19 @@ import java.util.*;
 
 public class Flete {
     private int codigoFlete;
-    private String descripcionFlete;
+
+    private int cantidadPack;
     private ArrayList<Pack> pack;
 
     public Flete(int codigoFlete, String descripcionFlete) {
-        this.codigoFlete = codigoFlete;
-        this.descripcionFlete = descripcionFlete;
-        this.pack = pack;
+        pack = añadirPack(codigoFlete, descripcionFlete);
+        this.cantidadPack = pack.size();
+    }
+
+    private ArrayList<Pack> añadirPack(int codigoFlete, String descripcionFlete) {
+        Pack pa = new Pack(codigoFlete, descripcionFlete);
+        this.pack.add(pa);
+        return pack;
     }
 
     public int getCodigoFlete() {
@@ -17,21 +23,5 @@ public class Flete {
 
     public void setCodigoFlete(int codigoFlete) {
         this.codigoFlete = codigoFlete;
-    }
-
-    public String getDescripcionFlete() {
-        return descripcionFlete;
-    }
-
-    public void setDescripcionFlete(String descripcionFlete) {
-        this.descripcionFlete = descripcionFlete;
-    }
-
-    public ArrayList<Pack> getPack() {
-        return pack;
-    }
-
-    public void setPack(ArrayList<Pack> pack) {
-        this.pack = pack;
     }
 }

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Validar {
 
-    private int pedirNumeroLimitado(int min, int max){
+    public int pedirNumeroLimitado(int min, int max){
         System.out.println("Indique un numero (" + min + "-" + max + ")");
         int num;
         do {
@@ -14,7 +14,7 @@ public class Validar {
         return num;
     }
 
-    private int pedirNumero(){
+    public int pedirNumero(){
         Scanner teclado = new Scanner(System.in);
         int numero;
         do {
@@ -29,7 +29,7 @@ public class Validar {
         return  numero;
     }
 
-    private boolean limitesNumero(int num, int min ,int max) {
+    public boolean limitesNumero(int num, int min ,int max) {
         return (min <= num && num <= max);
     }
 }

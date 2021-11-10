@@ -1,7 +1,8 @@
 public class Ejecutar {
     public static void main(String[] args) {
 
-        Sucursal sucursal = new Sucursal();
-        sucursal.probarSucursal();
+    Empresa empresa = new Empresa();
+    empresa.ejecutar();
+
     }
 }
