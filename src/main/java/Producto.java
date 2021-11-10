@@ -1,14 +1,19 @@
 public class Producto {
 
-    private int _codigoProducto;
-    private String _tipoProducto;
-    public Pack _unnamed_Pack_;
+    private int codigoProducto;
+    private String tipoProducto;
 
-    public void setCodigoProducto(int aCodigoProducto) {
-        this._codigoProducto = aCodigoProducto;
+    public Producto(int codigoProducto, String tipoProducto) {
+        this.codigoProducto = codigoProducto;
+        this.tipoProducto = tipoProducto;
     }
 
     public int getCodigoProducto() {
-        return this._codigoProducto;
+        return codigoProducto;
     }
+
+    public String getTipoProducto() {
+        return tipoProducto;
+    }
+
 }

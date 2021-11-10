@@ -8,5 +8,11 @@ public class Camion {
     private boolean estadoServicio;
     private int valorEmbarque;
 
-
+    public Camion(int codigoCamion, String patente, String descripcion, boolean estadoServicio, int valorEmbarque) {
+        this.codigoCamion = codigoCamion;
+        this.patente = patente;
+        this.descripcion = descripcion;
+        this.estadoServicio = estadoServicio;
+        this.valorEmbarque = valorEmbarque;
+    }
 }
